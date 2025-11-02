@@ -7,8 +7,10 @@
 
 import Foundation
 
+let baseURL = "http://127.0.0.1:8000"
+
 func sendRequestWithFCM(bearer: String, fcmToken: String) async {
-    guard let requestURL = URL(string: "http://127.0.0.1:8000/users/me/fcm-token/refresh") else { return }
+    guard let requestURL = URL(string: "\(baseURL)/users/me/fcm-token/refresh") else { return }
     var request = URLRequest(url: requestURL)
     request.httpMethod = "GET"
     request.setValue("Bearer \(bearer)", forHTTPHeaderField: "Authorization")
@@ -22,7 +24,7 @@ func sendRequestWithFCM(bearer: String, fcmToken: String) async {
 }
 
 func sendRequestWithBearer(bearer: String) async {
-    guard let requestURL = URL(string: "http://127.0.0.1:8000/users/me/hello") else { return }
+    guard let requestURL = URL(string: "\(baseURL)/users/me/hello") else { return }
     var request = URLRequest(url: requestURL)
     request.httpMethod = "GET"
     request.setValue("Bearer \(bearer)", forHTTPHeaderField: "Authorization")
