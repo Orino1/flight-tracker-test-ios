@@ -36,9 +36,22 @@
 		313E4DF62E5DFA7F0024FCD3 /* testProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		31AB09472EB722C000AC0819 /* Exceptions for "testProject" folder in "testProject" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 313E4DF52E5DFA7F0024FCD3 /* testProject */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		313E4DF82E5DFA7F0024FCD3 /* testProject */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				31AB09472EB722C000AC0819 /* Exceptions for "testProject" folder in "testProject" target */,
+			);
 			path = testProject;
 			sourceTree = "<group>";
 		};
@@ -339,6 +352,7 @@
 				DEVELOPMENT_TEAM = 673X6DMZ94;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = testProject/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Needs it";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Needs it";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -373,6 +387,7 @@
 				DEVELOPMENT_TEAM = 673X6DMZ94;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = testProject/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Needs it";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Needs it";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
